@@ -1,22 +1,9 @@
 import React from 'react';
 import Tag from './Tag';
+import Gallery from './Gallery';
+import CopyLinkButton from './CopyLinkButton';
 
 const TripCard = ({ trip, onTagClick }) => {
-  const handleCopyLink = () => {
-    const url = window.location.href + '#' + encodeURIComponent(trip.title);
-    
-    navigator.clipboard.writeText(url).then(() => {
-      alert('คัดลอกลิงก์แล้ว!');
-    }).catch(() => {
-      const textArea = document.createElement('textarea');
-      textArea.value = url;
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textArea);
-      alert('คัดลอกลิงก์แล้ว!');
-    });
-  };
 
   const fallbackMain = 'https://via.placeholder.com/600x400?text=No+Image';
   const handleImageError = (e) => {
@@ -52,31 +39,23 @@ const TripCard = ({ trip, onTagClick }) => {
               ))}
             </div>
             
-            {trip.gallery && trip.gallery.length > 0 && (
-              <div className="photo-gallery">
-                {trip.gallery.map((photo, index) => (
-                  <img
-                    key={index}
-                    src={photo || 'https://via.placeholder.com/90?text=No+Img'}
-                    alt={`Gallery ${index + 1}`}
-                    className="gallery-photo"
-                    loading="lazy"
-                    onError={handleThumbError}
-                  />
-                ))}
-              </div>
+            <Gallery photos={trip.gallery} />
+
+            {trip.readMoreUrl && (
+              <a
+                className="read-more-btn"
+                href={trip.readMoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                อ่านต่อ
+              </a>
             )}
           </div>
         </div>
       </div>
-      
-      <button
-        className="copy-btn"
-        onClick={handleCopyLink}
-        title="คัดลอกลิงก์"
-      >
-        🔗
-      </button>
+
+      <CopyLinkButton title={trip.title} />
     </div>
   );
 };

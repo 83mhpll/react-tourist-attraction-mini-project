@@ -5,6 +5,7 @@ export const tripsData = [
       description: 'วางแผนไปเที่ยวเกาะช้างกัน พร้อมท์ทำกิจกรรมสนุก ๆ เช่น เที่ยวป่า ดำน้ำดูปลา นั่งชิลในสถานที่ท่องเที่ยวใหม่',
       image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop&crop=center',
       tags: ['เกาะ', 'กิน', 'ดำน้ำลึก', 'ธรรมชาติ', 'และ', 'ตลาด'],
+      readMoreUrl: 'https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87',
       gallery: [
         'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=60&h=60&fit=crop&crop=center',
         'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=60&h=60&fit=crop&crop=center',
@@ -19,6 +20,7 @@ export const tripsData = [
       description: 'BTS สายสีเขียวนอกจากมีกิจกรรม 5 ส่วนกิจกรม งานนี้มาดูว่าไปพักสนใจมาดู จุดเปิดโตเล่ย์ เชื่อนี้เที่ยเลยทำใหม่ ๆ ดูให้มาว',
       image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=300&h=200&fit=crop&crop=center',
       tags: ['คาเฟ่', 'ร้านอาหาร', 'จุดถ่ายรูป', 'เที่ยวในกรุง', 'และ', 'ครอบครัวมากมาว'],
+      readMoreUrl: 'https://www.bts.co.th',
       gallery: [
         'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=60&h=60&fit=crop&crop=center',
         'https://images.unsplash.com/photo-1551632811-561732d1e306?w=60&h=60&fit=crop&crop=center',
@@ -33,6 +35,7 @@ export const tripsData = [
       description: 'บานเพลงร้องส่วนวา กับกุ้งทานตะวันอิคคำกลาว 30 ไร่ แล้วยักทะเล่าน่ใน เพราะข้าวไปเก็ยเขมวถับกันแ้แมแม่เล็ก',
       image: 'https://images.unsplash.com/photo-1597149738901-e7dc95ef5296?w=300&h=200&fit=crop&crop=center',
       tags: ['จุดถ่ายรูป', 'ธรรมชาติสวย', 'เที่ยวในกรุง', 'และ', 'ยามสี่'],
+      readMoreUrl: 'https://th.wikipedia.org/wiki/%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5',
       gallery: [
         'https://images.unsplash.com/photo-1597149738901-e7dc95ef5296?w=60&h=60&fit=crop&crop=center',
         'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=60&h=60&fit=crop&crop=center',
